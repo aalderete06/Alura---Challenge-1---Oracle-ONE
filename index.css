@@ -1,0 +1,179 @@
+* {
+    text-align:center;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+html {
+    font-family: "Times New Roman", sans-serif, Arial;
+    background-color: #E5E5E5;
+}
+
+textarea {
+    font-size: 20px;
+
+}
+
+header{
+    text-align:center;
+    display: flex;
+    justify-content:flex-start;
+    align-items:center;
+    grid-row: 1;
+}
+
+.titulo h1{
+    display: inline;
+    font-size: 1.5em;
+    margin: 10px auto;
+    width: 30%;
+}
+
+.titulo h2{
+    display: inline;
+    font-size: 0.9em;
+    margin: 10px auto;
+    width: 30%;
+}
+
+button {
+    background-color: aqua;
+    color: black;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+button:hover {
+    background-color: azure;
+    color: black;
+}
+
+button:focus {
+    background-color: aquamarine;
+    color: black;
+}
+
+.cajaContenidos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    grid-auto-rows: minmax(200px, auto);
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.cajaEncriptar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.cajaDesencriptar {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 28px 5px aquamarine;
+}
+
+.textoEntrada {
+    flex: 2 400px;
+    border: 0;
+    background-color: #E5E5E5;
+    resize: none;
+    border-radius: 10px;
+}
+
+.textoSalida {
+    flex: 2 300px;
+    width: 90vw;
+    resize: none;
+}
+
+.botones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.botones button {
+    flex: 1 auto;
+    margin: 5px;
+    font-size: 18px;
+    line-height: 1.5;
+    width: 50px;
+}
+
+.sinTexto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.conTexto {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.conTexto button {
+
+    flex: 1 auto;
+    font-size: 18px;
+    line-height: 1.5;
+    width: 250px;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: aqua;
+    text-align: center;
+    color: black;
+    padding: 20px;
+    margin-top: 20px;
+    width: 98vw;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .cajaContenidos {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 30px;
+        grid-auto-rows: minmax(80vh, auto);
+        margin-right: 15px;
+        margin-left: 15px;
+
+
+    }
+    header{
+        padding: 30px 30px 30px 0;
+    }
+
+    .textoSalida {
+
+        width: 30vw;
+        flex: 2 70vh;
+        resize: none;
+    }
+    footer {
+      background-color: aqua;
+      text-align: center;
+      color: black;
+      padding: 20px;
+      margin-top: 20px;
+      width: 98vw;
+  }
+  
+}

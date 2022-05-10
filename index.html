@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es"> <!--lenguaje en español-->
+
+    <head> <!--informacion del documento-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encriptador de Texto</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="shortcut icon" href="imagen/Vector.png" type="imagen/x-icon">
+        <link rel="icon" href="imagen/Vector.png">
+        <link rel="stylesheet" href="index.css">
+        <script src="index.js"></script>        
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">
+                <img src="imagen/Logo.png" alt="Logo Alura" class="Logo alura">
+            </div>
+            <div class="titulo">
+                <h1>Alura Oracle ONE -</h1>
+                <h2>Challenge 1</h2>             
+            </div>        
+        </header>
+        <main>
+            <div class="cajaContenidos"> <!--caja de contenido-->
+                <div class="cajaEncriptar">
+                    <textarea class="textoEntrada" placeholder="ingresa el texto en letras minúsculas y sin acentos."></textarea>
+                    <div class="botones"> <!--caja de botones-->
+                        <button id="encriptar">Encriptar</button> <!--boton encriptar-->
+                        <button id="desencriptar">Desencriptar</button> <!--boton desencriptar-->
+                    </div>
+                </div>
+
+                <div class="cajaDesencriptar">
+                    <div class="sinTexto">
+                        <img class="inspector" src="imagen/inspector.png">
+                        <h3>Ningun mensaje fue encontrado</h3>
+                        <br>
+                        <p>Ingrese el texto que desea encriptar o desencriptar</p>
+                    </div>
+
+                    <div class="conTexto">
+                        <textarea class="textoSalida"></textarea>
+                        <button id="copiar" class="copiar">copiar</button>
+                    </div>
+                </div>              
+                
+            </div>
+        </main>
+
+        <footer> <!--pie de pagina-->
+            <a href="https://github.com/aalderete06?tab=repositories" class="icono"><img src="imagen/github.svg" alt="" width="20"></a>
+            <a href="https://www.linkedin.com/in/angel-alberto-alderete-46036b79/" class="icono"><img src="imagen/linkedin.svg" alt="" width="20"></a>
+            <a href="mailto:aalderete06@outlook.com" class="iconos"><img src="imagen/mail.svg" alt="" width="20px"></a>
+            <p>&copy; 2022 - Angel Alberto Alderete</p>            
+        </footer>
+    </body>
+
+
+
+
+
+
+
+</html>
